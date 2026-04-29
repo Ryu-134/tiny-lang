@@ -85,9 +85,12 @@ primary        -> NUMBER | IDENTIFIER | "(" expression ")" ;
 - non-boolean `if` conditions
 - non-boolean `while` conditions
 
-## How to Run
+## How to Run (Mac)
 
 ```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
 python3 main.py
 python3 main.py examples/valid_program.tl
 python3 -m unittest discover -s tests -v
